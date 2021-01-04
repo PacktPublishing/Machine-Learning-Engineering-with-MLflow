@@ -1,0 +1,8 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!init.sql
+
+# ignore unnecessary files inside the folders
+
