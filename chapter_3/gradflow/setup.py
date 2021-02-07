@@ -45,32 +45,10 @@ def get_long_description():
 setup(
     name="workbench",
     version=get_version(),
-    author="Sertan Şentürk",
-    author_email="contact@sertansenturk.com",
-    maintainer="Sertan Şentürk",
-    maintainer_email="contact@sertansenturk.com",
-    url="https://github.com/sertansenturk/workbench",
-    description="A short description of the project",
+    url="",
+    description="A simple workbench",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
-    download_url=(
-        "https://github.com/sertansenturk/workbench.git"
-        if "dev" in get_version()
-        else "https://github.com/sertansenturk/workbench/"
-        "releases/tag/v{0:s}".format(get_version())
-    ),
-    classifiers=[
-        "Development Status :: 4 - Beta",
-        "Environment :: Console",
-        "Intended Audience :: Science/Research",
-        "Intended Audience :: Information Technology",
-        "License :: OSI Approved :: GNU Affero General Public License v3 or "
-        "later (AGPLv3+)",
-        "Natural Language :: English",
-        "Operating System :: POSIX :: Linux",
-        "Programming Language :: Python :: 3",
-        "Topic :: Scientific/Engineering :: Information Analysis",
-    ],
     platforms="Linux",
     license="agpl 3.0",
     keywords=(

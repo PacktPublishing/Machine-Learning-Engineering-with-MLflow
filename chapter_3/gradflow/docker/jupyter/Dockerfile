@@ -14,7 +14,6 @@ RUN conda install --quiet --yes \
         'psycopg2=2.8.*' \
         'conda-build' \
         'tqdm' \
-        'pandas-datareader' \
         'jupyter_contrib_nbextensions' \
         'jupyter_nbextensions_configurator' && \
     conda build purge-all && \
