@@ -1,0 +1,54 @@
+language: python
+os: linux
+dist: bionic
+jobs:
+  include:
+    - name: "docker-compose-build"
+      if: branch NOT IN (master, dev) # already covered by docker-compose-test
+      services: docker
+      script: make build
+    - name: "docker-compose-test"
+      if: branch IN (master, dev)
+      services: docker
+      script: 
+        - make test
+      after_script:
+        - ls -la ./data/ # mlflow artifact & tracking data
+    - name: "tox"
+      env: TOX_PYTHON_ENV=py37
+      python: 3.7
+      before_install:
+        - pwd
+        - ls -la
+        - id
+      install:
+        - pip install -U pip
+        - pip install tox-travis
+        - pip install codecov
+      script:
+        - tox -e $TOX_PYTHON_ENV -e lint
+      after_success:
+        - codecov # submit coverage to https://codecov.io/gh/sertansenturk/workbench/
+    - name: "documentation"
+      install:
+        - pip install sphinx
+        - pip install sphinx_rtd_theme
+      before_script:
+        - cd docs
+      script:
+        - make html SPHINXOPTS:="-nWT -b dummy"
+before_install:
+  - pwd
+  - ls -la
+  - id
+  - docker --version
+install:
+  - 
+before_script:
+  -
+script:
+  - 
+after_success:
+  - 
+after_script:
+  - 

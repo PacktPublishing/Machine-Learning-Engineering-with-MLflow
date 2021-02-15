@@ -1,0 +1,32 @@
+########### .dockerignore file for ./docker/jupyter/Dockerfile ###########
+# The build context of other services in the docker-compose stack is     #
+# their base folder, e.g. "./docker/mlflow/". Therefore their .gitignore #
+# files are also there.                                                  #
+#                                                                        #
+# However, the build context of "./docker/jupyter" is "./", which is why #
+# we have the .dockerignore here.                                        #
+#                                                                        #
+# For more information please refer to the issue below:                  #
+# https://github.com/moby/moby/issues/12886#issuecomment-518843764       #
+##########################################################################
+# Ignore everything
+**
+
+# Allow files and directories
+!tests/
+!requirements.*txt
+!setup.py
+!src/
+!tox.ini
+!.pylintrc
+!docker/jupyter/scripts/*.sh
+!docker/jupyter/requirements.test.txt
+
+# ignore unnecessary files inside the folders
+**/*~
+**/*.log
+**/.DS_Store
+**/Thumbs.Distribution
+**/.idea
+**/*.pyc
+**/.ipynb_checkpoints
