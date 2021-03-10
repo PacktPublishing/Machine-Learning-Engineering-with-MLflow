@@ -142,3 +142,5 @@ mlruns
 */gradflow/data/
 */.local
 
+.DS_Store
+
