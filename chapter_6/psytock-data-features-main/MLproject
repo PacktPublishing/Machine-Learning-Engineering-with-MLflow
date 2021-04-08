@@ -1,0 +1,17 @@
+name: pystock_data_features
+
+conda_env: conda.yaml
+
+entry_points:
+
+  load_raw_data:
+    command: "python load_raw_data.py"
+
+  clean_validate_data:
+    command: "python check_verify_data.py "
+
+  feature_set_generation:
+    command: "python feature_set_generation.py"
+
+  main:
+    command: "python main.py"
