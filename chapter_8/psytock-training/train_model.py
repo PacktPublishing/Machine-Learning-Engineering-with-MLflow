@@ -19,10 +19,7 @@ if __name__ == "__main__":
     with mlflow.start_run(run_name="train_model") as run:
         mlflow.set_tag("mlflow.runName", "train_model")
 
-
-        pandas_df=pd.read_csv("data/training/data.csv")
-
-        pandas_df.reset_index(inplace=True)
+        pandas_df=pd.read_csv("data/training/data.csv", header=None)
 
         X_train, X_test, y_train, y_test = train_test_split_pandas(pandas_df)
 
@@ -36,6 +33,6 @@ if __name__ == "__main__":
 
         test_prediction_results = pd.DataFrame(data={'y_pred':y_preds,'y_test':y_test})
 
-        result = test_prediction_results.reset_index(drop=True)
+        result = test_prediction_results
         
         result.to_csv("data/predictions/test_predictions.csv")
