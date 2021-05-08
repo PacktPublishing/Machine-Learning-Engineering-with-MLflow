@@ -1,0 +1,9 @@
+name: pystock_training
+
+conda_env: conda.yaml
+
+entry_points:
+
+  main:
+    data_file: path
+    command: "python main.py"

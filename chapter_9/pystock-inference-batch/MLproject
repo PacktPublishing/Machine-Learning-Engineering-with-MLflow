@@ -1,0 +1,7 @@
+name: pystock_run
+
+Environment: System
+
+entry_points:
+  main:
+    command: "python batch_scoring.py"
