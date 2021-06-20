@@ -1,0 +1,5 @@
+project: psystock_feature_store
+registry: data/registry.db
+provider: local
+online_store:
+    path: data/online_store.db
