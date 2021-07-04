@@ -1,0 +1,20 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!tests/python
+!requirements.*txt
+!docker/python-dev/requirements.txt
+!setup.py
+!src
+!tox.ini
+!.pylintrc
+
+# ignore unnecessary files inside the folders
+**/*~
+**/*.log
+**/.DS_Store
+**/Thumbs.Distribution
+**/.idea
+**/*.pyc
+**/.ipynb_checkpoints
