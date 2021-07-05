@@ -1,0 +1,20 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env: conda.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.8.8
+  xgboost:
+    data: model.xgb
+    xgb_version: 1.3.3
+run_id: ed0a40810bbb44d883b6b7bb54776e12
+signature:
+  inputs: '[{"name": 0, "type": "long"}, {"name": 1, "type": "long"}, {"name": 2,
+    "type": "long"}, {"name": 3, "type": "long"}, {"name": 4, "type": "long"}, {"name":
+    5, "type": "long"}, {"name": 6, "type": "long"}, {"name": 7, "type": "long"},
+    {"name": 8, "type": "long"}, {"name": 9, "type": "long"}, {"name": 10, "type":
+    "long"}, {"name": 11, "type": "long"}, {"name": 12, "type": "long"}, {"name":
+    13, "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+utc_time_created: '2021-07-05 17:49:19.765367'
