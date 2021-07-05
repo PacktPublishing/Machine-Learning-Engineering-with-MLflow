@@ -1,0 +1,18 @@
+name: pystock_training
+
+conda_env: conda.yaml
+
+entry_points:
+
+  main:
+    data_file: path
+    command: "python main.py"
+
+  train_model:
+    command: "python train_model.py"
+
+  evaluate_model:
+    command: "python evaluate_model.py "
+
+  register_model:
+    command: "python register_model.py"
