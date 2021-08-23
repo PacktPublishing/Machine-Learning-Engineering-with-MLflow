@@ -19,6 +19,8 @@ pretty_command := $(bold)$(padded_str)$(sgr0)
 
 include .env  # environment variables used in docker-compose stack
 
+export
+
 MAKEFILE_DIR = $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 
 PRUNE_OPTS = -f
