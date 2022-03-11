@@ -52,7 +52,7 @@ services:
       POSTGRES_PORT: ${POSTGRES_PORT}
       WAIT_FOR_IT_TIMEOUT: ${WAIT_FOR_IT_TIMEOUT}
     volumes:
-      - ./${MLFLOW_ARTIFACT_STORE}:/${MLFLOW_ARTIFACT_STORE}
+      - ${MLFLOW_ARTIFACT_STORE}:/${MLFLOW_ARTIFACT_STORE}
   postgres:
     user: "${POSTGRES_UID}:${POSTGRES_GID}"
     build:
@@ -65,4 +65,4 @@ services:
     ports:
       - "${POSTGRES_PORT}:${POSTGRES_PORT}"
     volumes:
-      - ./${POSTGRES_STORE}:/var/lib/postgresql/data
+      - ${POSTGRES_STORE}:/var/lib/postgresql/data

@@ -1,0 +1,10 @@
+name: pystock-inference-batch
+channels:
+  - defaults
+dependencies:
+  - python=3.8.5
+  - pandas
+  - pip:
+    - mlflow
+    - pandas
+    - xgboost

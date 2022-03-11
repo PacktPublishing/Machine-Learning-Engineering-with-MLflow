@@ -3,12 +3,12 @@ channels:
   - defaults
 dependencies:
   - python=3.8.5
-  - numpy=1.20.1
+  - numpy
   - scipy
   - pandas
   - cloudpickle
   - pip:
-    - git+git://github.com/mlflow/mlflow
+    - mlflow
     - sklearn
     - pandas_datareader
     - great-expectations==0.13.15

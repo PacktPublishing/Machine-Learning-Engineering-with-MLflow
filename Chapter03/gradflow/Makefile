@@ -98,7 +98,7 @@ purge: clean-all
 clean-all: down-all prune clean-stores clean-python
 clean: down prune
 clean-stores:
-	rm -rf ./${MLFLOW_ARTIFACT_STORE} ./${POSTGRES_STORE}
+	rm -rf ${MLFLOW_ARTIFACT_STORE} ${POSTGRES_STORE}
 
 clean-python:
 	find . -name '*.pyc' -exec rm -f {} +

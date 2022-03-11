@@ -1,7 +1,8 @@
 name: pystock_run
 
-Environment: System
+conda_env: conda.yaml
 
 entry_points:
   main:
+    data_file: path
     command: "python batch_scoring.py"

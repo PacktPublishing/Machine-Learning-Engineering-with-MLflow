@@ -8,7 +8,7 @@ dependencies:
   - pandas
   - cloudpickle
   - pip:
-    - git+git://github.com/mlflow/mlflow
+    - mlflow
     - sklearn
     - pandas_datareader
     - great-expectations==0.13.15

@@ -2,13 +2,9 @@ FROM continuumio/miniconda3
 
 WORKDIR /batch-scoring/
 
-RUN pip install mlflow==1.16.0
+RUN pip install mlflow
+COPY ./   /batch-scoring/
 
-RUN pip install pandas==1.2.4
+ENV MLFLOW_TRACKING_URI=http://172.31.29.157:5000
 
-COPY batch_scoring.py   /batch-scoring/
-COPY MLproject          /batch-scoring/
-
-ENV MLFLOW_TRACKING_URI=http://localhost:5000
-
-ENTRYPOINT ["mlflow run . --no-conda"]
+ENTRYPOINT ["mlflow", "run", "."]

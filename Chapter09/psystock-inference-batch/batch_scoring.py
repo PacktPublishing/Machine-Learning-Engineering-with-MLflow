@@ -5,9 +5,7 @@ import mlflow.pyfunc
 if __name__ == "__main__":
 
     with mlflow.start_run(run_name="batch_scoring") as run:
-
         data=pd.read_csv("data/input.csv",header=None)
-
         model_name = "training-model-psystock"
         stage = 'Production'
 
