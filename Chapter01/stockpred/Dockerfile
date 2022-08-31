@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN pip install mlflow>=1.18.0 \
+RUN pip install mlflow>=1.28.0 \
     && pip install numpy \
     && pip install scipy \
     && pip install pandas \
