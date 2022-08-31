@@ -6,7 +6,6 @@ from setuptools import find_packages, setup
 HERE = os.path.abspath(os.path.dirname(__file__))
 EXP_DIR = "src"
 
-
 def get_version():
     """ Read version from __init__.py
 
@@ -40,7 +39,6 @@ def get_long_description():
             return f.read()
     except FileNotFoundError:  # not necessary, e.g. in Docker
         return ""
-
 
 setup(
     name="workbench",
