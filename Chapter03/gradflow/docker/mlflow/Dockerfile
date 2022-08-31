@@ -1,11 +1,11 @@
-FROM python:3.7
+FROM python:3.8.10
 
 EXPOSE 5000
 
 ARG MLFLOW_VERSION
 ARG SERVER_DIR=/server
 
-RUN pip install mlflow==$MLFLOW_VERSION psycopg2==2.8.* && \
+RUN pip install mlflow==$MLFLOW_VERSION psycopg2==2.8.* protobuf==3.20.* && \
     mkdir -p ${SERVER_DIR}
 
 COPY ./scripts/wait-for-it.sh ${SERVER_DIR}/
