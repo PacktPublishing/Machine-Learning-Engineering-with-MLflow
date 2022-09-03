@@ -17,6 +17,7 @@
 !requirements.*txt
 !setup.py
 !src/
+!src/workbench/__init__.py
 !tox.ini
 !.pylintrc
 !docker/jupyter/scripts/*.sh
