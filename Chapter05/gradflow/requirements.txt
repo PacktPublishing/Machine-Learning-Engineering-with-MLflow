@@ -1,4 +1,4 @@
 xgboost==1.4.2
-tensorflow==2.5.1
+tensorflow==2.9.2
 pandas-datareader==0.10.0
 hyperopt==0.2.7
