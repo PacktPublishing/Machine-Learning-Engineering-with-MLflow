@@ -53,9 +53,6 @@ JUPYTER_USERNAME := $(shell id -u -n)
 POSTGRES_UID := $(shell id -u)
 POSTGRES_GID := $(shell id -g)
 
-TRAVIS_JOB =
-TRAVIS_TOKEN =
-
 
 default: clean build up
 lab: default
