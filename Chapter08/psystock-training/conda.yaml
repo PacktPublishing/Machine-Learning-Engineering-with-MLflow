@@ -8,9 +8,10 @@ dependencies:
   - pandas
   - cloudpickle
   - pip:
-    - git+git://github.com/mlflow/mlflow
+    - git+https://github.com/mlflow/mlflow.git
     - sklearn
-    - pandas_datareader
+    - pandas_datareader==0.10.0
     - great-expectations==0.13.15
-    - pandas-profiling
+    - pandas-profiling==3.3.0
+    - jinja2==3.0.3
     - xgboost
