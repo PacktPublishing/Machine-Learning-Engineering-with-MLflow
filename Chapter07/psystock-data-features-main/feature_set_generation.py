@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
         mlflow.set_tag("mlflow.runName", "feature_set_generation")
 
-        raise Exception('x should not exceed 5. The value of x was: {}'.format(x))
+        # raise Exception('x should not exceed 5. The value of x was: {}'.format(x))
 
         btc_df = pd.read_csv("data/staging/data.csv")
 
