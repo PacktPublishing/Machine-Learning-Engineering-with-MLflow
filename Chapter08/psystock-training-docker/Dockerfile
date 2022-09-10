@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3:4.9.2
 
-RUN apt-get update && apt-get install build-essential -y
+RUN apt-get --allow-releaseinfo-change update && apt-get install build-essential -y
 
 RUN pip install \
     mlflow==1.18.0 \
