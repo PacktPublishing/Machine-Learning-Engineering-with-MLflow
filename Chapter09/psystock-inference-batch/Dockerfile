@@ -9,4 +9,4 @@ COPY MLproject          /batch-scoring/
 
 ENV MLFLOW_TRACKING_URI=http://localhost:5000
 
-ENTRYPOINT ["mlflow", "run. ", "--no-conda"]
+ENTRYPOINT ["mlflow", "run . ", "--no-conda"]
