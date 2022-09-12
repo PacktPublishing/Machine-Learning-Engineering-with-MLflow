@@ -5,6 +5,7 @@ RUN apt-get --allow-releaseinfo-change update && apt-get install build-essential
 RUN pip install \
     mlflow==1.18.0 \
     pymysql==1.0.2 \
+    protobuf==3.20.* \
     boto3
 
 COPY ./training_project /src
