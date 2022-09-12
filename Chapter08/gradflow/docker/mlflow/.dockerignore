@@ -1,7 +1,0 @@
-# Ignore everything
-**
-
-# Allow files and directories
-!./scripts/*.sh
-
-# ignore unnecessary files inside the folders
