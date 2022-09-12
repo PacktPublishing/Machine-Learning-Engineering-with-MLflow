@@ -1,2 +1,0 @@
-# psytock-training
-psytock-training
