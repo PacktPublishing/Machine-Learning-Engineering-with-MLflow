@@ -66,3 +66,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Natu Lauchande** is a principal data engineer in the fi ntech space currently tackling problems at the intersection of machine learning, data engineering, and distributed systems. He has worked in diverse industries, including biomedical/pharma research, cloud, fi ntech, and e-commerce/mobile. Along the way, he had the opportunity to be granted a patent (as co-inventor) in distributed systems, publish in a top academic journal, and contribute to open source soft ware. He has also been very active as a speaker at machine learning/tech conferences and meetups.
 
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800560796">https://packt.link/free-ebook/9781800560796 </a> </p>
