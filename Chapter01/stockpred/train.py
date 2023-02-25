@@ -2,7 +2,8 @@ import warnings
 
 import numpy as np
 import datetime
-import pandas_datareader.data as web
+import pandas_datareader.data as pdr
+import yfinance as yfin
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
@@ -14,9 +15,10 @@ import mlflow.sklearn
 
 
 def acquire_training_data():
+    yfin.pdr_override()
     start = datetime.datetime(2019, 7, 1)
     end = datetime.datetime(2019, 9, 30)
-    df = web.DataReader("BTC-USD", 'yahoo', start, end)
+    df = pdr.DataReader("BTC-USD", 'yahoo', start, end)
     return df
 
 def digitize(n):
