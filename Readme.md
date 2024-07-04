@@ -9,5 +9,5 @@
 
 **Marley**
 
-Запуск примеров разбирался <a href="https://aiops.ru//study/books/machine-learning-engineering-with-mlflow/">здесь</a>  
-Любые вопросы на русском: <a href="https://matematika.org/chat/">Телеграм чат</a>
+Запуск примеров разбирался <a href="https://mlops.ru/books/machine-learning-engineering-with-mlflow/">здесь</a>  
+Любые вопросы на русском: <a href="https://mlops.ru/chat/">Телеграм чат</a>
